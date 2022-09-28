@@ -149,6 +149,12 @@ jobs:
           - task: bindings
             os: windows-latest
             rust: stable
+            target: aarch64-pc-windows-msvc
+            features: full-async
+            optimization: false
+          - task: bindings
+            os: windows-latest
+            rust: stable
             target: i686-pc-windows-msvc
             features: full-async
             optimization: false
